@@ -1,4 +1,7 @@
 fun main() {
-    readln().split(" ").all { x -> x.length > 4 }.let(::println)
+    val list = readln().split(" ")
+    // write your code here
+    val res = list.filterIndexed { index, s ->  s.length == 5 && index != 0 }
 
+    println(res)
 }
