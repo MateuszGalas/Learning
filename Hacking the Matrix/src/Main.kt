@@ -1,3 +1,7 @@
 fun main() {
-    readln().split(" ").map { it.toInt() }.dropLastWhile { it % 2 == 0 }.let(::println)
+    val list = readln().split(" ")
+
+    val res = list.sumOf { it.length.takeIf { it >= 4 } ?: 0 }
+
+    println(res)
 }
