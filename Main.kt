@@ -1,7 +1,7 @@
-//Multiplying values in range, excluding last one.
 fun main() {
-    val a = readln().toLong()
-    val b = readln().toLong()
+    val list = readln().split(" ").map { it.toInt() }
 
-    (a until b).reduce(Long::times).let(::print)
+    val res = list.all { it % 2 == 0 && it <= 20 }
+
+    println(res)
 }
