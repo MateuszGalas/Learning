@@ -1,7 +1,14 @@
-fun main() {
-    val list = readln().split(" ").map { it.toInt() }
+fun main(args: Array<String>) {
+    val number = readln().toInt()
+    var a = 0
+    var b = 1
+    val fibonnacci = mutableListOf(a, b)
 
-    val res = list.all { it % 2 == 0 && it <= 20 }
+    repeat(number - 2) {
+        a = fibonnacci[fibonnacci.lastIndex - 1]
+        b = fibonnacci[fibonnacci.lastIndex]
+        fibonnacci.add(a + b)
+    }
 
-    println(res)
+    println(fibonnacci)
 }
