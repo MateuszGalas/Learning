@@ -1,0 +1,6 @@
+select 
+    hour, 
+    feels_like / temperature as ratio, 
+    pressure 
+from 
+    Weather;
