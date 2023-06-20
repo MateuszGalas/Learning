@@ -1,0 +1,2 @@
+Exercise 1: Password Validator
+Write a function that takes a password as input and checks whether it meets the following criteria: minimum length of 8 characters, contains at least one uppercase letter, one lowercase letter, one digit, and one special character.
